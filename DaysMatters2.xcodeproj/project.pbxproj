@@ -13,6 +13,7 @@
 		33F5538021F0D98300A85674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F5537E21F0D98300A85674 /* LaunchScreen.storyboard */; };
 		33F5538821F0D9BF00A85674 /* EventsToDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5538721F0D9BF00A85674 /* EventsToDisplay.swift */; };
 		33F5538A21F0DD9800A85674 /* EventsToDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5538921F0DD9800A85674 /* EventsToDisplayViewController.swift */; };
+		33F5538E21F257F300A85674 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5538D21F257F300A85674 /* EventsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		33F5538121F0D98300A85674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33F5538721F0D9BF00A85674 /* EventsToDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsToDisplay.swift; sourceTree = "<group>"; };
 		33F5538921F0DD9800A85674 /* EventsToDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsToDisplayViewController.swift; sourceTree = "<group>"; };
+		33F5538D21F257F300A85674 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				33F5537521F0D97F00A85674 /* AppDelegate.swift */,
 				33F5538721F0D9BF00A85674 /* EventsToDisplay.swift */,
 				33F5538921F0DD9800A85674 /* EventsToDisplayViewController.swift */,
+				33F5538D21F257F300A85674 /* EventsTableViewCell.swift */,
 				33F5537921F0D97F00A85674 /* Main.storyboard */,
 				33F5537C21F0D98300A85674 /* Assets.xcassets */,
 				33F5537E21F0D98300A85674 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F5538E21F257F300A85674 /* EventsTableViewCell.swift in Sources */,
 				33F5537621F0D97F00A85674 /* AppDelegate.swift in Sources */,
 				33F5538A21F0DD9800A85674 /* EventsToDisplayViewController.swift in Sources */,
 				33F5538821F0D9BF00A85674 /* EventsToDisplay.swift in Sources */,

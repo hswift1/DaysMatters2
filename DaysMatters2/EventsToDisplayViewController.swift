@@ -10,27 +10,39 @@ import UIKit
 
 class EventsToDisplayViewController: UITableViewController {
     
-    var events: [EventsToDisplay] = [
-    EventsToDisplay(eventName: "Birth", fromNow: true, numberOfDays: 1234),
-    EventsToDisplay(eventName: "earthquake", fromNow: true, numberOfDays: 12345),
-    EventsToDisplay(eventName: "20years old", fromNow: false, numberOfDays: 98765)
+    var events = [
+        Event(name: "birth", fromNow: true, numberCount: 1),
+        Event(name: "movie", fromNow: false, numberCount: 5)
     ]
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count
-        //return 1
     }
     
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventDetailedCell", for: indexPath)
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EventDetailedCell", for: indexPath) as! EventTableViewCell
+        
         _ = events[indexPath.row]
-    
-        cell.textLabel?.text = "\(events.eventName)"
-    
+        
+   //     cell.update(with: _)
+        cell.showsReorderControl = true
+        
         return cell
-  }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
